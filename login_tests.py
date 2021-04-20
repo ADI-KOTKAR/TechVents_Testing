@@ -17,7 +17,7 @@ class loginCases(unittest.TestCase):
         login_btn.click()
         time.sleep(2)
         self.assertIn("TechVents | Login", self.browser.title)
-        print(colored("\u2713 test_1 : Empty Inputs Test Passed \nOK", "green"))
+        print(colored("\u2713 test_1 : Empty Inputs Test Passed \n OK", "green"))
 
     def test_2_Invalid_Credentials(self):
         self.browser.get("http://techvents-ip.great-site.net/Login.php")
@@ -32,7 +32,7 @@ class loginCases(unittest.TestCase):
         login_btn.click()
         time.sleep(2)
         self.assertIn("TechVents | Login", self.browser.title)
-        print(colored("\u2713 test_2 : Invalid Credentials Passed \nOK", "green"))
+        print(colored("\u2713 test_2 : Invalid Credentials Passed \n OK", "green"))
 
     def test_3_Valid_Credentials(self):
         self.browser.get("http://techvents-ip.great-site.net/Login.php")
@@ -47,7 +47,7 @@ class loginCases(unittest.TestCase):
         login_btn.click()
         time.sleep(2)
         self.assertIn("TechVents | Admin Dashboard", self.browser.title)
-        print(colored("\u2713 test_3 : Valid Credentials Test Passed \nOK", "green"))
+        print(colored("\u2713 test_3 : Valid Credentials Test Passed \n OK", "green"))
 
 
 if __name__ == '__main__':

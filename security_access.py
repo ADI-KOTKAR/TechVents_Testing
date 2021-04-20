@@ -17,7 +17,7 @@ class securityAccess_Tests(unittest.TestCase):
         events_btn.click()
         time.sleep(2)
         self.assertIn('TechVents | Blog', self.browser.title)
-        print(colored("\u2713 test_1 Event Check Passed \nOK", "green"))
+        print(colored("\u2713 test_1 : Event Check Passed \nOK", "green"))
 
     def test_2_Check_News(self):
         self.browser.get("http://techvents-ip.great-site.net/Blog.php")

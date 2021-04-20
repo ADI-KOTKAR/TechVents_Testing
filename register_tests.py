@@ -22,7 +22,7 @@ class registerCases(unittest.TestCase):
         signup_btn.click()
         time.sleep(2)
         self.assertIn("TechVents | Register", self.browser.title)
-        print(colored("\u2713 test_1 : Empty Inputs Test Passed \nOK", "green"))
+        print(colored("\u2713 test_1 : Empty Inputs Test Passed \n OK", "green"))
 
     def test_2_Short_Password(self):
         self.browser.get("http://techvents-ip.great-site.net/Signup.php")
@@ -41,7 +41,7 @@ class registerCases(unittest.TestCase):
         signup_btn.click()
         time.sleep(2)
         self.assertIn("TechVents | Register", self.browser.title)
-        print(colored("\u2713 test_2 : Short Password Test Passed \nOK", "green"))
+        print(colored("\u2713 test_2 : Short Password Test Passed \n OK", "green"))
 
     def test_3_Invalid_Confirm_Password(self):
         self.browser.get("http://techvents-ip.great-site.net/Signup.php")
@@ -60,7 +60,8 @@ class registerCases(unittest.TestCase):
         signup_btn.click()
         time.sleep(2)
         self.assertIn("TechVents | Register", self.browser.title)
-        print(colored("\u2713 test_3 : Invalid Confirm Password Test Passed \nOK", "green"))
+        print(
+            colored("\u2713 test_3 : Invalid Confirm Password Test Passed \n OK", "green"))
 
     def test_4_Valid_Register_Credentials(self):
         self.browser.get("http://techvents-ip.great-site.net/Signup.php")
@@ -78,7 +79,7 @@ class registerCases(unittest.TestCase):
         signup_btn.click()
         time.sleep(2)
         self.assertIn("TechVents | Login", self.browser.title)
-        print(colored("\u2713 test_4 : Valid Registration Test Passed \nOK", "green"))
+        print(colored("\u2713 test_4 : Valid Registration Test Passed \n OK", "green"))
 
     def test_5_Valid_Login_Credentials(self):
         self.browser.get("http://techvents-ip.great-site.net/Login.php")
@@ -93,7 +94,7 @@ class registerCases(unittest.TestCase):
         login_btn.click()
         time.sleep(2)
         self.assertIn("TechVents | User Dashboard", self.browser.title)
-        print(colored("\u2713 test_5 : Valid Login Test Passed \nOK", "green"))
+        print(colored("\u2713 test_5 : Valid Login Test Passed \n OK", "green"))
 
 
 if __name__ == '__main__':
